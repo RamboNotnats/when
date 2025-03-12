@@ -1,0 +1,84 @@
+[gd_scene load_steps=2 format=3 uid="uid://da1fxaha8pss5"]
+
+[ext_resource type="Script" uid="uid://dc1aj3kamjxnk" path="res://gah_mey.gd" id="1_i2ejq"]
+
+[node name="gah mey" type="Node2D"]
+script = ExtResource("1_i2ejq")
+
+[node name="boo tohn" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ben johnson" type="Button" parent="boo tohn"]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 263.0
+offset_right = 916.0
+offset_bottom = 425.0
+theme_override_font_sizes/font_size = 150
+text = "when"
+
+[node name="whens" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="whens" type="Label" parent="whens"]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 108.0
+offset_right = 319.0
+offset_bottom = 211.0
+theme_override_font_sizes/font_size = 75
+text = "whens:"
+
+[node name="the whens real" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 2.0
+offset_right = 40.0
+offset_bottom = 42.0
+
+[node name="Label" type="Label" parent="the whens real"]
+layout_mode = 0
+offset_left = 371.0
+offset_top = 113.0
+offset_right = 1004.0
+offset_bottom = 216.0
+scale = Vector2(0.974224, 1.02961)
+theme_override_font_sizes/font_size = 75
+text = "no whens?"
+
+[node name="upcostshowitthecostsowme" type="Label" parent="the whens real"]
+z_index = -23
+layout_mode = 0
+offset_left = -25.0
+offset_top = -12.0
+offset_right = 1165.0
+offset_bottom = 670.0
+theme_override_colors/font_color = Color(0, 0.588235, 0.988235, 1)
+theme_override_font_sizes/font_size = 500
+text = "hello"
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 94.0
+offset_top = 521.0
+offset_right = 134.0
+offset_bottom = 561.0
+
+[node name="Button" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = -75.0
+offset_top = 56.0
+offset_right = 145.0
+offset_bottom = 99.0
+theme_override_font_sizes/font_size = 25
+text = "more whens/click"
+
+[connection signal="pressed" from="boo tohn/ben johnson" to="." method="_on_ben_johnson_pressed"]
+[connection signal="pressed" from="Control/Button" to="." method="_on_button_pressed"]
